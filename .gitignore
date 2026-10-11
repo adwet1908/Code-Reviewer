@@ -1,0 +1,61 @@
+# Secrets and local env (keep *.example committed)
+.env
+.env.*
+!.env.example
+!**/.env.example
+backend/.env
+frontend/.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.pyo
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+!.cursor/project.mdc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and local debug artifacts
+*.log
+debug-*.log
+backend/scripts/_debug_*.py
+
+# Eval outputs (regenerated locally)
+eval_results/
+
+# Alembic / local DB dumps
+*.sqlite3
+*.db
+
+# Misc
+*.pem
+*.key
+credentials.json
+service-account*.json
